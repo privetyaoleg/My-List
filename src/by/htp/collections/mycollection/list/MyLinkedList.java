@@ -1,8 +1,8 @@
-package by.htp.collections.LinkedList.MyLinkedList;
+package by.htp.collections.mycollection.list;
 
-import by.htp.collections.MyCollections;
+import java.util.Iterator;
 
-public class MyLinkedList<E> implements MyCollections<E> {
+public class MyLinkedList<E>  implements MyCollections<E> {
 
 	private Node<E> firstNode;
 	private Node<E> lastNode;
@@ -100,6 +100,11 @@ public class MyLinkedList<E> implements MyCollections<E> {
 		}
 		return node;
 	}
+	
+	@Override
+	public Iterator<E> iterator() {
+			return null;
+	}
 
 
 
@@ -139,6 +144,10 @@ public class MyLinkedList<E> implements MyCollections<E> {
 		}
 		
 	}
+
+
+
+	
 
 
 
